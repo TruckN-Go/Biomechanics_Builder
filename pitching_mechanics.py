@@ -8,8 +8,6 @@ from src.ColorWheel import ColorWheel
 wheel = ColorWheel()
 from src.ChatCSV import butter_lowpass_filter, process_csv_from_chat
 
-
-
 graph_color = wheel.bubblegum
 
 filename_pitch = os.path.join(os.getcwd(), "mock_data", "mlb_pitching_biomechanics_temporal_dataset.csv")

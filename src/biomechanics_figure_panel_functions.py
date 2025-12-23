@@ -54,11 +54,11 @@ def sprint_acceleration(graph_color = wheel.powder_blue):
 
     ax['title'].set_axis_off()
 
-    fig.text(.25,1, "Temporal Coordination of Lower-Body\nJoints during Sprint Acceleration", ha='center', va='center', 
+    fig.text(.25,0.8, "Temporal Coordination of Lower-Body\nJoints during Sprint Acceleration", ha='center', va='center', 
             fontsize=fs_title, weight='bold', linespacing=0.9, color=annotation_color)
 
 
-    fig.text(.75,1, "Force Application &\nVelocity Development\nduring Early Sprint Acceleration", ha='center', va='center', 
+    fig.text(.75,0, "Force Application &\nVelocity Development\nduring Early Sprint Acceleration", ha='center', va='center', 
             fontsize=fs_title, weight='bold', linespacing=1, color=annotation_color)
 
 
@@ -190,11 +190,11 @@ def pitching_mechanics(graph_color = wheel.bubblegum):
 
     ax['title'].set_axis_off()
 
-    fig.text(.25,1, "Temporal Joint Kinematics\n during a Ball Pitch", ha='center', va='center', 
+    fig.text(.25,0.8, "Temporal Joint Kinematics\n during a Ball Pitch", ha='center', va='center', 
             fontsize=fs_title, weight='bold', linespacing=0.9, color=annotation_color)
 
 
-    fig.text(.75,1, "Mechanical Loading Metrics\nRelevant to Injury Risk\nduring Pitching", ha='center', va='center', 
+    fig.text(.75,0, "Mechanical Loading Metrics\nRelevant to Injury Risk\nduring Pitching", ha='center', va='center', 
             fontsize=fs_title, weight='bold', linespacing=1, color=annotation_color)
 
 
@@ -340,11 +340,11 @@ def jump_shot_initiation(graph_color = wheel.orange_creamsicle):
 
     ax['title'].set_axis_off()
 
-    fig.text(.25,1, "Temporal Coordination of Joint\nAngles during Jump Shot", ha='center', va='center', 
+    fig.text(.25,0.8, "Temporal Coordination of Joint\nAngles during Jump Shot", ha='center', va='center', 
             fontsize=fs_title, weight='bold', linespacing=0.9, color=annotation_color)
 
 
-    fig.text(.75,1, "Vertical Force Production & Velocity\nduring Jump Shot Execution", ha='center', va='center', 
+    fig.text(.75,0, "Vertical Force Production & Velocity\nduring Jump Shot Execution", ha='center', va='center', 
             fontsize=fs_title, weight='bold', linespacing=1, color=annotation_color)
 
 
@@ -402,7 +402,7 @@ def jump_shot_initiation(graph_color = wheel.orange_creamsicle):
     ax['vertical_grf_N_per_kg'].set_title("Vertical Ground\nReaction Force", weight='bold', fontsize=fs_title, c=graph_color)
     ax['vertical_grf_N_per_kg'].set_ylabel("Vertical Ground\nReaction Force (N/kg)", weight='bold', fontsize=fs)
 
-    ax['com_velocity_m_per_s'].set_title("Center-of-Mass Velocity", weight='bold', fontsize=fs_title, c=graph_color, y=title_y_pos)
+    ax['com_velocity_m_per_s'].set_title("Center-of-Mass Velocity", weight='bold', fontsize=fs_title, c=graph_color, y=1.2)
     ax['com_velocity_m_per_s'].set_ylabel("Velocity (m/s)", weight='bold', fontsize=fs)
 
     ax['power_W_per_kg'].set_title("Vertical Power", weight='bold', fontsize=fs_title, c=graph_color)

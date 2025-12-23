@@ -8,6 +8,8 @@ from src.ColorWheel import ColorWheel
 wheel = ColorWheel()
 from src.ChatCSV import butter_lowpass_filter, process_csv_from_chat
 
+graph_color = wheel.orange_creamsicle
+
 def remove_offset_from_early_window(df, pct=0.08):
     grf_col = "vertical_grf_N_per_kg"
     t0 = df["time_s"].min()
@@ -16,7 +18,6 @@ def remove_offset_from_early_window(df, pct=0.08):
     df[grf_col] = (df[grf_col] - baseline).clip(lower=0)
     return df
 
-graph_color = wheel.orange_creamsicle
 
 jump_shot_phases = ['flight','loading','propulsion']
 icon_dict = dict()
